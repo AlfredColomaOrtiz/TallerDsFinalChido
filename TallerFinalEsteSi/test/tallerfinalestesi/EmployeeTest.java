@@ -45,7 +45,14 @@ public class EmployeeTest extends TestCase{
      */
     @Test
     public void testCs() {
-        System.out.println("cs");
+        System.out.println("cs1");
+        Employee instance;
+        instance = new Employee(570.50F,"USD",0.50F,EmployeeType.Supervisor);
+        float expResult = 570.67F;
+        float result = instance.cs();
+        assertEquals(expResult, result, 0.0);
+        
+        System.out.println("cs2");
         Employee instance2 = new Employee(10f, "USD", 10f, EmployeeType.Manager);
         float expResult2 = 17.0F;
         float result2 = instance2.cs();
