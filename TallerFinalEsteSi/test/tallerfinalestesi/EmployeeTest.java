@@ -59,6 +59,11 @@ public class EmployeeTest extends TestCase{
         assertEquals(expResult2, result2, 1);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
+        System.out.println("cs3");
+        Employee instance3 = new Employee(10f, "USD", 10f, EmployeeType.Worker);
+        float expResult3 = 10.0f;
+        float result3 = instance3.cs();
+        assertEquals(expResult3, result3, 0.0f );
     }
 
     /**
@@ -66,13 +71,14 @@ public class EmployeeTest extends TestCase{
      */
     @Test
     public void testCalculateYearBonus() {
-        System.out.println("CalculateYearBonus");
-        Employee instance = null;
-        float expResult = 0.0F;
-        float result = instance.CalculateYearBonus();
-        assertEquals(expResult, result, 0.0);
+        
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
+        System.out.println("CalculateYearBonus 3");
+        Employee instance3 = new Employee(10f, "USD", 10f, EmployeeType.Worker);
+        float expResult3 = 386.0F;
+        float result3 = instance3.CalculateYearBonus();
+        assertEquals(expResult3, result3,0.0f );
     }
     
 }
