@@ -15,7 +15,7 @@ public class TallerFinalEsteSi {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Employee ep2 = new Employee(10f, "USD", 10f, EmployeeType.Manager);
+        Employee ep2 = new Employee(570.50F,"USD",0.50F,EmployeeType.Supervisor);
         System.out.print(ep2.cs());
     }
     
