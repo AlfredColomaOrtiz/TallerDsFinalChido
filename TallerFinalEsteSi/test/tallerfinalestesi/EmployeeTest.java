@@ -47,7 +47,7 @@ public class EmployeeTest extends TestCase{
     public void testCs() {
         System.out.println("cs");
         Employee instance2 = new Employee(10f, "USD", 10f, EmployeeType.Manager);
-        float expResult2 = 0.0F;
+        float expResult2 = 17.0F;
         float result2 = instance2.cs();
         assertEquals(expResult2, result2, 0.0);
         // TODO review the generated test code and remove the default call to fail.

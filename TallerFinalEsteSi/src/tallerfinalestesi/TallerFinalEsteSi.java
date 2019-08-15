@@ -15,7 +15,8 @@ public class TallerFinalEsteSi {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Employee ep2 = new Employee(10f, "USD", 10f, EmployeeType.Manager);
+        System.out.print(ep2.cs());
     }
     
 }
