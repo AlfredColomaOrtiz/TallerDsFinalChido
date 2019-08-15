@@ -74,6 +74,18 @@ public class EmployeeTest extends TestCase{
         
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
+        System.out.println("CalculateYearBonus 2");
+        Employee instance2 = new Employee(10f, "al", 10f, EmployeeType.Manager);
+        float expResult2 = 395.5F;
+        float result2 = instance2.CalculateYearBonus();
+        assertEquals(expResult2, result2,0.0f );
+        
+        System.out.println("CalculateYearBonus1");
+        Employee instance = new Employee(570.50F,"EURO",0.50F,EmployeeType.Supervisor);
+        float expResult = 734.975F;
+        float result = instance.CalculateYearBonus();
+        assertEquals(expResult, result, 1);
+        
         System.out.println("CalculateYearBonus 3");
         Employee instance3 = new Employee(10f, "USD", 10f, EmployeeType.Worker);
         float expResult3 = 386.0F;
